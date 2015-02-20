@@ -1,0 +1,88 @@
+<!-- This is an Ant build file. -->
+
+<!-- Please REVIEW these settings, and edit to suit your environment. -->
+
+<project name="predict" default="init" basedir=".">
+<property name="replacement.base.package" value="hirondelle.predict"/>
+<property name="appName" value="predictions"/>
+<property name="war.file.name" value="predict"/>
+<property name="tempDir" value="C:\Temp\"/>
+<property name="javadocAppName" value="Predictions"/>
+<property name="javadocApiRoots" value="-link http://www.web4j.com/web4j/javadoc/ -link http://java.sun.com/javase/6/docs/api/ -link http://java.sun.com/javaee/5/docs/api/"/>
+<property name="srcRoot" value="WEB-INF\classes\"/>
+<property name="overview" value="WEB-INF\classes\overview.html"/>
+<property name="web4j-jar" value="WEB-INF/lib/web4j.jar"/>
+
+ <!-- You will need to point to where you keep some jars (see the compile target below) -->
+<property name="libraries" value="C:\johanley\Projects\Libraries"/>
+
+  <!-- all .java source files -->
+  <fileset id="java.sources" dir="${srcRoot}" casesensitive="yes" >
+   <include name="**/*.java"/>
+  </fileset>
+
+  <!-- all .java files which do not start with "TEST" -->
+  <fileset id="non.test.sources" dir="${srcRoot}" casesensitive="yes" >
+   <include name="**/*.java"/>
+   <exclude name="**/TEST*"/>
+  </fileset>
+
+  <!-- All .class files -->
+  <fileset id="class.files" dir="." casesensitive="yes" >
+   <include name="**/*.class"/>
+  </fileset>
+
+  <!-- When starting a new project based on this example application, -->
+  <!-- it is highly recommended to FIRST run this task, -->
+  <!-- to change the base package name into something more appropriate for your project. -->
+ <target name="update.base.package" description="Dumb textual replace of base package name, appearing (usually) in import and package stms.">
+ <echo message="Updating base package to ${replacement.base.package}"/>
+ <echo message="Directory names are not updated by this task - only source code."/>
+ <replace dir="${srcRoot}" token="hirondelle.predict" value="${replacement.base.package}" >
+   <include name="**/*.java"/>
+   <include name="**/*.html"/>
+ </replace>
+ <replace dir="." token="hirondelle.fish" value="${replacement.base.package}" >
+   <include name="**/*.jsp"/>
+   <include name="WEB-INF/web.xml"/>
+   <include name="WEB-INF/tlds/web4j.tld"/>
+   <include name="WEB-INF/logging.properties"/>
+ </replace>
+</target>
+
+<target name="init" description="Sets timestamp properties and makes dir's.">
+ <tstamp>
+  <format property="archiveTime" pattern="yyyyMMMdd.H.mm"/>
+ </tstamp>
+</target>
+
+<target name="clean" depends="init" description="Remove classes, zip's and war's">
+ <delete><fileset refid="class.files"/></delete>
+ <delete file="${appName}.zip"/>
+ <delete file="${war.file.name}.war"/>
+</target>
+  
+<target name="compile" depends="clean" description="Create all .class files beside .java files">
+ <javac 
+   debug="on"
+   srcdir="${srcRoot}"  
+   classpath="WEB-INF\lib\junit.jar;WEB-INF\lib\servlet-api.jar;WEB-INF\lib\web4j.jar;WEB-INF\lib\recaptcha4j-0.0.7.jar" source="1.5" />
+</target>
+
+<target name="war" depends="compile" description="Create war file">
+   <mkdir dir="${tempDir}\${archiveTime}"/>
+   <echo message="Making war file."/>
+   <zip 
+     zipfile="${tempDir}\${archiveTime}\${war.file.name}.war" 
+     basedir="."
+     excludes= "**/*.java, **/.nbattrs, **/*.bat, **/*.java_hidden, build.xml, **/package-info.java, **/overview.html, WEB-INF/datastore/**, .classpath, .project "
+   />
+   <copy file="${tempDir}\${archiveTime}\${war.file.name}.war" todir="."/>
+</target>
+
+  
+<!-- For deploying a .war to a local server, it is likely best to configure the server -->
+<!-- to "point to" the development directory. For Tomcat, such entries can be made  -->
+<!-- in server.xml, as Context entries. -->
+  
+</project>

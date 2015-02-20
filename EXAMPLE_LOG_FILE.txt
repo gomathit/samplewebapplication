@@ -1,0 +1,724 @@
+4-Oct-2013 9:49:02 AM hirondelle.web4j.webmaster.LoggingConfigImpl tryTestMessages
+FINEST: This is a test message for Logger 'hirondelle.predict'
+4-Oct-2013 9:49:02 AM hirondelle.web4j.webmaster.LoggingConfigImpl tryTestMessages
+FINEST: This is a test message for Logger 'hirondelle.web4j'
+4-Oct-2013 9:49:02 AM hirondelle.web4j.webmaster.LoggingConfigImpl setup
+CONFIG: Logging to directory : 'C:\log\predict\'
+4-Oct-2013 9:49:02 AM hirondelle.web4j.webmaster.LoggingConfigImpl setup
+CONFIG: Current date-time: 2013-10-04 09:49:02.125000000 (uses your TimeSource implementation and the DefaultUserTimeZone setting in web.xml)
+4-Oct-2013 9:49:02 AM hirondelle.web4j.webmaster.LoggingConfigImpl setup
+CONFIG: Raw value of System.currentTimeMillis(): 1380890942140
+4-Oct-2013 9:49:02 AM hirondelle.web4j.webmaster.LoggingConfigImpl showLoggerLevels
+CONFIG: Logger hirondelle.predict has level FINEST
+4-Oct-2013 9:49:02 AM hirondelle.web4j.webmaster.LoggingConfigImpl showLoggerLevels
+CONFIG: Logger hirondelle.web4j has level FINEST
+4-Oct-2013 9:49:02 AM hirondelle.web4j.BuildImpl init
+CONFIG: ________________________ STARTUP :Initializing WEB4J Controller. Reading in settings in web.xml._________
+4-Oct-2013 9:49:02 AM hirondelle.web4j.BuildImpl useStandardOrDefaultNameSecond
+CONFIG: For items *not* specified in web.xml, searching for implementations with 'standard' name.
+4-Oct-2013 9:49:02 AM hirondelle.web4j.BuildImpl useStandardOrDefaultNameSecond
+CONFIG: If no 'standard' implementation found, then will use the WEB4J 'default' implementation.
+4-Oct-2013 9:49:02 AM hirondelle.web4j.BuildImpl buildStandardOrDefaultClass
+CONFIG: Cannot see any class named 'hirondelle.web4j.config.RequestToAction'. Will use default WEB4J implementation instead, named 'hirondelle.web4j.request.RequestParserImpl'
+4-Oct-2013 9:49:02 AM hirondelle.web4j.BuildImpl buildStandardOrDefaultClass
+CONFIG: Cannot see any class named 'hirondelle.web4j.config.AppFirewall'. Will use default WEB4J implementation instead, named 'hirondelle.web4j.security.ApplicationFirewallImpl'
+4-Oct-2013 9:49:02 AM hirondelle.web4j.BuildImpl buildStandardOrDefaultClass
+CONFIG: Cannot see any class named 'hirondelle.web4j.config.ConvertColumns'. Will use default WEB4J implementation instead, named 'hirondelle.web4j.database.ConvertColumnImpl'
+4-Oct-2013 9:49:02 AM hirondelle.web4j.BuildImpl buildStandardOrDefaultClass
+CONFIG: Cannot see any class named 'hirondelle.web4j.config.LocaleSrc'. Will use default WEB4J implementation instead, named 'hirondelle.web4j.request.LocaleSourceImpl'
+4-Oct-2013 9:49:02 AM hirondelle.web4j.BuildImpl buildStandardOrDefaultClass
+CONFIG: Cannot see any class named 'hirondelle.web4j.config.TimeZoneSrc'. Will use default WEB4J implementation instead, named 'hirondelle.web4j.request.TimeZoneSourceImpl'
+4-Oct-2013 9:49:02 AM hirondelle.web4j.BuildImpl buildStandardOrDefaultClass
+CONFIG: Cannot see any class named 'hirondelle.web4j.config.SpamDetect'. Will use default WEB4J implementation instead, named 'hirondelle.web4j.security.SpamDetectorImpl'
+4-Oct-2013 9:49:02 AM hirondelle.web4j.BuildImpl buildStandardOrDefaultClass
+CONFIG: Cannot see any class named 'hirondelle.web4j.config.Email'. Will use default WEB4J implementation instead, named 'hirondelle.web4j.webmaster.EmailerImpl'
+4-Oct-2013 9:49:02 AM hirondelle.web4j.BuildImpl buildStandardOrDefaultClass
+CONFIG: Cannot see any class named 'hirondelle.web4j.config.ConvertParams'. Will use default WEB4J implementation instead, named 'hirondelle.web4j.model.ConvertParamImpl'
+4-Oct-2013 9:49:02 AM hirondelle.web4j.BuildImpl buildStandardOrDefaultClass
+CONFIG: Cannot see any class named 'hirondelle.web4j.config.PermittedChars'. Will use default WEB4J implementation instead, named 'hirondelle.web4j.security.PermittedCharactersImpl'
+4-Oct-2013 9:49:02 AM hirondelle.web4j.BuildImpl buildStandardOrDefaultClass
+CONFIG: Cannot see any class named 'hirondelle.web4j.config.OwnerFirewall'. Will use default WEB4J implementation instead, named 'hirondelle.web4j.security.UntrustedProxyForUserIdImpl'
+4-Oct-2013 9:49:02 AM hirondelle.web4j.BuildImpl init
+CONFIG: Mapping of implementation classes : (19) {
+  'hirondelle.web4j.ApplicationInfo' = 'class hirondelle.web4j.config.AppInfo'
+  'hirondelle.web4j.database.ConnectionSource' = 'class hirondelle.web4j.config.ConnectionSrc'
+  'hirondelle.web4j.database.ConvertColumn' = 'class hirondelle.web4j.database.ConvertColumnImpl'
+  'hirondelle.web4j.model.ConvertParam' = 'class hirondelle.web4j.model.ConvertParamImpl'
+  'hirondelle.web4j.model.ConvertParamError' = 'class hirondelle.web4j.config.ConvertParamErrorImpl'
+  'hirondelle.web4j.request.DateConverter' = 'class hirondelle.web4j.config.DateConverterImpl'
+  'hirondelle.web4j.request.LocaleSource' = 'class hirondelle.web4j.request.LocaleSourceImpl'
+  'hirondelle.web4j.request.RequestParser' = 'class hirondelle.web4j.request.RequestParserImpl'
+  'hirondelle.web4j.request.TimeZoneSource' = 'class hirondelle.web4j.request.TimeZoneSourceImpl'
+  'hirondelle.web4j.security.ApplicationFirewall' = 'class hirondelle.web4j.security.ApplicationFirewallImpl'
+  'hirondelle.web4j.security.LoginTasks' = 'class hirondelle.predict.pub.login.Login'
+  'hirondelle.web4j.security.PermittedCharacters' = 'class hirondelle.web4j.security.PermittedCharactersImpl'
+  'hirondelle.web4j.security.SpamDetector' = 'class hirondelle.web4j.security.SpamDetectorImpl'
+  'hirondelle.web4j.security.UntrustedProxyForUserId' = 'class hirondelle.web4j.security.UntrustedProxyForUserIdImpl'
+  'hirondelle.web4j.StartupTasks' = 'class hirondelle.web4j.config.Startup'
+  'hirondelle.web4j.ui.translate.Translator' = 'class hirondelle.web4j.config.TranslatorImpl'
+  'hirondelle.web4j.util.TimeSource' = 'class hirondelle.web4j.util.TimeSourceImpl'
+  'hirondelle.web4j.webmaster.Emailer' = 'class hirondelle.web4j.webmaster.EmailerImpl'
+  'hirondelle.web4j.webmaster.LoggingConfig' = 'class hirondelle.web4j.webmaster.LoggingConfigImpl'
+}
+4-Oct-2013 9:49:02 AM hirondelle.web4j.Controller displaySystemProperties
+CONFIG: System Properties (64) {
+  'awt.toolkit' = 'sun.awt.windows.WToolkit'
+  'catalina.base' = 'C:\johanley\Projects\TomcatInstance'
+  'catalina.home' = 'C:\Program Files\Tomcat6'
+  'catalina.useNaming' = 'true'
+  'common.loader' = '${catalina.home}/lib,${catalina.home}/lib/*.jar'
+  'file.encoding' = 'UTF-8'
+  'file.encoding.pkg' = 'sun.io'
+  'file.separator' = '\'
+  'java.awt.graphicsenv' = 'sun.awt.Win32GraphicsEnvironment'
+  'java.awt.printerjob' = 'sun.awt.windows.WPrinterJob'
+  'java.class.path' = '.;C:\Program Files\Java\jre7\lib\ext\QTJava.zip;C:\Program Files\Tomcat6\bin\bootstrap.jar'
+  'java.class.version' = '49.0'
+  'java.endorsed.dirs' = 'C:\Program Files\Tomcat6\endorsed'
+  'java.ext.dirs' = 'C:\jdk1.5.0\jre\lib\ext'
+  'java.home' = 'C:\jdk1.5.0\jre'
+  'java.io.tmpdir' = 'C:\johanley\Projects\TomcatInstance\temp'
+  'java.library.path' = 'C:\jdk1.5.0\bin;.;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\WinAVR\bin;C:\Program Files\WinAVR\utils\bin;C:\Ruby193\bin;C:\jdk1.7.0\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32\WBEM;C:\Program Files\Common Files\Roxio Shared\DLLShared\;C:\Program Files\cvs;C:\ant\bin;C:\Program Files\subversion\bin;C:\Program Files\JavaCC\bin;C:\Program Files\PuTTY;C:\cygwin\bin;C:\oracle\ora92\bin;C:\Program Files\MySQL\MySQL Server 5.5\bin;C:\mysql5\bin;C:\Program Files\QuickTime\QTSystem\'
+  'java.naming.factory.initial' = 'org.apache.naming.java.javaURLContextFactory'
+  'java.naming.factory.url.pkgs' = 'org.apache.naming'
+  'java.runtime.name' = 'Java(TM) 2 Runtime Environment, Standard Edition'
+  'java.runtime.version' = '1.5.0_07-b03'
+  'java.specification.name' = 'Java Platform API Specification'
+  'java.specification.vendor' = 'Sun Microsystems Inc.'
+  'java.specification.version' = '1.5'
+  'java.util.logging.config.file' = 'C:\johanley\Projects\TomcatInstance\conf\logging.properties'
+  'java.util.logging.manager' = 'org.apache.juli.ClassLoaderLogManager'
+  'java.vendor' = 'Sun Microsystems Inc.'
+  'java.vendor.url' = 'http://java.sun.com/'
+  'java.vendor.url.bug' = 'http://java.sun.com/cgi-bin/bugreport.cgi'
+  'java.version' = '1.5.0_07'
+  'java.vm.info' = 'mixed mode, sharing'
+  'java.vm.name' = 'Java HotSpot(TM) Client VM'
+  'java.vm.specification.name' = 'Java Virtual Machine Specification'
+  'java.vm.specification.vendor' = 'Sun Microsystems Inc.'
+  'java.vm.specification.version' = '1.0'
+  'java.vm.vendor' = 'Sun Microsystems Inc.'
+  'java.vm.version' = '1.5.0_07-b03'
+  'line.separator' = '
+'
+  'os.arch' = 'x86'
+  'os.name' = 'Windows XP'
+  'os.version' = '5.1'
+  'package.access' = 'sun.,org.apache.catalina.,org.apache.coyote.,org.apache.tomcat.,org.apache.jasper.,sun.beans.'
+  'package.definition' = 'sun.,java.,org.apache.catalina.,org.apache.coyote.,org.apache.tomcat.,org.apache.jasper.'
+  'path.separator' = ';'
+  'server.loader' = ''
+  'shared.loader' = ''
+  'sun.arch.data.model' = '32'
+  'sun.boot.class.path' = 'C:\jdk1.5.0\jre\lib\rt.jar;C:\jdk1.5.0\jre\lib\i18n.jar;C:\jdk1.5.0\jre\lib\sunrsasign.jar;C:\jdk1.5.0\jre\lib\jsse.jar;C:\jdk1.5.0\jre\lib\jce.jar;C:\jdk1.5.0\jre\lib\charsets.jar;C:\jdk1.5.0\jre\classes'
+  'sun.boot.library.path' = 'C:\jdk1.5.0\jre\bin'
+  'sun.cpu.endian' = 'little'
+  'sun.cpu.isalist' = ''
+  'sun.desktop' = 'windows'
+  'sun.io.unicode.encoding' = 'UnicodeLittle'
+  'sun.jnu.encoding' = 'Cp1252'
+  'sun.management.compiler' = 'HotSpot Client Compiler'
+  'sun.os.patch.level' = 'Service Pack 3'
+  'tomcat.util.buf.StringCache.byte.enabled' = 'true'
+  'user.country' = 'CA'
+  'user.dir' = 'C:\johanley\Projects\TomcatInstance'
+  'user.home' = 'C:\Documents and Settings\John'
+  'user.language' = 'en'
+  'user.name' = 'John'
+  'user.timezone' = 'America/Halifax'
+  'user.variant' = ''
+}
+4-Oct-2013 9:49:02 AM hirondelle.web4j.Controller displayConfigInfo
+CONFIG: Context Name : 'Prediction Tracking'
+4-Oct-2013 9:49:02 AM hirondelle.web4j.Controller displayConfigInfo
+CONFIG: Context Params : (0) {
+}
+4-Oct-2013 9:49:02 AM hirondelle.web4j.Controller displayConfigInfo
+CONFIG: Servlet Params : (38) {
+  'AllowStringAsBuildingBlock' = 'NO'
+  'BigDecimalDisplayFormat' = '#,##0.00'
+  'BooleanFalseDisplayFormat' = '<input type='checkbox' name='false' value='false' readonly notab>'
+  'BooleanTrueDisplayFormat' = '<input type='checkbox' name='true' value='true' checked readonly notab>'
+  'CaptchaPrivateKey' = '******************'
+  'CharacterEncoding' = 'UTF-8'
+  'DecimalSeparator' = 'PERIOD'
+  'DefaultDbConnectionString' = 'java:comp/env/jdbc/predict'
+  'DefaultLocale' = 'en'
+  'DefaultUserTimeZone' = 'America/Halifax'
+  'EmptyOrNullDisplayFormat' = '-'
+  'ErrorCodeForDuplicateKey' = '1062'
+  'ErrorCodeForForeignKey' = '1216,1217,1451,1452'
+  'FetchSize' = '25'
+  'FullyValidateFileUploads' = 'ON'
+  'HasAutoGeneratedKeys' = 'true'
+  'IgnorableParamValue' = ''
+  'ImplementationFor.hirondelle.web4j.security.LoginTasks' = 'hirondelle.predict.pub.login.Login'
+  'ImplicitMappingRemoveBasePackage' = 'hirondelle.predict'
+  'IntegerDisplayFormat' = '#,###'
+  'IsSQLPrecompilationAttempted' = 'true'
+  'LoggingDirectory' = 'C:\log\predict\'
+  'LoggingLevels' = 'hirondelle.predict.level=FINEST, hirondelle.web4j.level=FINEST'
+  'MailServerConfig' = 'NONE'
+  'MailServerCredentials' = 'NONE'
+  'MaxFileUploadRequestSize' = '1048576'
+  'MaxHttpRequestSize' = '51200'
+  'MaxRequestParamValueSize' = '51200'
+  'MaxRows' = '300'
+  'MinimumIntervalBetweenTroubleTickets' = '30'
+  'PoorPerformanceThreshold' = '20'
+  'SpamDetectionInFirewall' = 'OFF'
+  'SqlEditorDefaultTxIsolationLevel' = 'DATABASE_DEFAULT'
+  'SqlFetcherDefaultTxIsolationLevel' = 'DATABASE_DEFAULT'
+  'TimeZoneHint' = 'NONE'
+  'TroubleTicketMailingList' = 'support@web4j.com'
+  'UntrustedProxyForUserId' = 'PredictionAction.*'
+  'Webmaster' = 'support@web4j.com'
+}
+4-Oct-2013 9:49:02 AM hirondelle.web4j.util.Util buildLocale
+FINEST: Raw Locale: en
+4-Oct-2013 9:49:02 AM hirondelle.web4j.util.Util buildLocale
+FINEST: Parsed Locale : 'en'
+4-Oct-2013 9:49:02 AM hirondelle.web4j.Controller init
+FINE: System properties and first app scope items completed 1055.849 ms after start.
+4-Oct-2013 9:49:02 AM hirondelle.web4j.request.RequestParameter init
+FINE: Max size of request parameter values, from web.xml : 51200
+4-Oct-2013 9:49:02 AM hirondelle.web4j.Controller displayVersionInfo
+CONFIG: Versions(7) {
+  'Application' = 'Predictions/${predict.version}'
+  'Java Runtime Environment (JRE)' = '1.5.0_07'
+  'Java Server Page API Version' = '2.1'
+  'Operating System' = 'Windows XP/5.1'
+  'Server' = 'Apache Tomcat/6.0.10'
+  'Servlet API Version' = '2.5'
+  'WEB4J Version' = 'WEB4J/4.9.0'
+}
+4-Oct-2013 9:49:02 AM hirondelle.web4j.Controller init
+CONFIG: Calling ConnectionSource.init(ServletConfig).
+4-Oct-2013 9:49:02 AM hirondelle.web4j.config.ConnectionSrc init
+CONFIG: Connection strings : (1) {
+  'DEFAULT' = 'java:comp/env/jdbc/predict'
+}
+4-Oct-2013 9:49:02 AM hirondelle.web4j.Controller init
+FINE: Init of internal classes, ConnectionSource completed 1110.330 ms after start.
+4-Oct-2013 9:49:02 AM hirondelle.web4j.Controller tryDatabaseInitAndStartupTasks
+CONFIG: Trying database init and startup tasks.
+4-Oct-2013 9:49:02 AM hirondelle.web4j.Controller tryDatabaseInitAndStartupTasks
+CONFIG: Attempting data layer startup tasks.
+4-Oct-2013 9:49:02 AM hirondelle.web4j.database.DbConfig initDataLayer
+FINE: Using web.xml config.
+4-Oct-2013 9:49:02 AM hirondelle.web4j.readconfig.InitParam fetch
+FINE: Init-param 'DateTimeFormatForPassingParamsToDb' not in web.xml. Using default  : 'YYYY-MM-DD^hh:mm:ss^YYYY-MM-DD hh:mm:ss'
+4-Oct-2013 9:49:03 AM hirondelle.web4j.database.DbConfig logDatabaseAndDriverNames
+CONFIG: 
+  Database Id passed to ConnectionSource: DEFAULT
+  Database name: MySQL/5.5.8
+  Database driver name: MySQL-AB JDBC Driver/mysql-connector-java-5.1.14 ( Revision: ${bzr.revision-id} )
+  Database URL: jdbc:mysql://localhost:3307/predict?useServerPrepStmts=false
+  Supports scrollable ResultSets (TYPE_SCROLL_INSENSITIVE, CONCUR_READ_ONLY): true
+4-Oct-2013 9:49:03 AM hirondelle.web4j.database.DbConfig checkHealthOf
+CONFIG: Success : Database named 'DEFAULT' detected OK.
+4-Oct-2013 9:49:03 AM hirondelle.web4j.database.DbConfig queryTxIsolationLevelSupport
+CONFIG: Supports Tx Isolation Level SERIALIZABLE: true
+4-Oct-2013 9:49:03 AM hirondelle.web4j.database.DbConfig queryTxIsolationLevelSupport
+CONFIG: Supports Tx Isolation Level REPEATABLE_READ: true
+4-Oct-2013 9:49:03 AM hirondelle.web4j.database.DbConfig queryTxIsolationLevelSupport
+CONFIG: Supports Tx Isolation Level READ_COMMITTED: true (default)
+4-Oct-2013 9:49:03 AM hirondelle.web4j.database.DbConfig queryTxIsolationLevelSupport
+CONFIG: Supports Tx Isolation Level READ_UNCOMMITTED: true
+4-Oct-2013 9:49:03 AM hirondelle.web4j.database.DbConfig queryTxIsolationLevelSupport
+CONFIG: Supports Tx Isolation Level DATABASE_DEFAULT: false
+4-Oct-2013 9:49:03 AM hirondelle.web4j.database.DbConfig initDataLayer
+CONFIG: *** SUCCESS : ALL DATABASES DETECTED OK! *** Num databases: 1
+4-Oct-2013 9:49:04 AM hirondelle.web4j.readconfig.ConfigReader fetchMany
+CONFIG: Desired configuration files under /WEB-INF/: (10) {
+  '/WEB-INF/classes/hirondelle/predict/main/codes/code_table.sql'
+  '/WEB-INF/classes/hirondelle/predict/main/deleteaccount/statements.sql'
+  '/WEB-INF/classes/hirondelle/predict/main/lists/statements.sql'
+  '/WEB-INF/classes/hirondelle/predict/main/prediction/statements.sql'
+  '/WEB-INF/classes/hirondelle/predict/main/preferences/preferences.sql'
+  '/WEB-INF/classes/hirondelle/predict/pub/login/csrf.sql'
+  '/WEB-INF/classes/hirondelle/predict/pub/lostpassword/statements.sql'
+  '/WEB-INF/classes/hirondelle/predict/pub/register/statements.sql'
+  '/WEB-INF/classes/hirondelle/predict/pub/resetpassword/statements.sql'
+  '/WEB-INF/classes/hirondelle/predict/pub/search/statements.sql'
+}
+4-Oct-2013 9:49:04 AM hirondelle.web4j.readconfig.TextBlockReader read
+FINE: Reading text block file : '/WEB-INF/classes/hirondelle/predict/pub/register/statements.sql'
+4-Oct-2013 9:49:04 AM hirondelle.web4j.readconfig.ConfigReader basicFetch
+FINEST: Number of keys in properties object : 2
+4-Oct-2013 9:49:04 AM hirondelle.web4j.readconfig.TextBlockReader read
+FINE: Reading text block file : '/WEB-INF/classes/hirondelle/predict/pub/login/csrf.sql'
+4-Oct-2013 9:49:04 AM hirondelle.web4j.readconfig.ConfigReader basicFetch
+FINEST: Number of keys in properties object : 2
+4-Oct-2013 9:49:04 AM hirondelle.web4j.readconfig.TextBlockReader read
+FINE: Reading text block file : '/WEB-INF/classes/hirondelle/predict/pub/lostpassword/statements.sql'
+4-Oct-2013 9:49:04 AM hirondelle.web4j.readconfig.ConfigReader basicFetch
+FINEST: Number of keys in properties object : 2
+4-Oct-2013 9:49:04 AM hirondelle.web4j.readconfig.TextBlockReader read
+FINE: Reading text block file : '/WEB-INF/classes/hirondelle/predict/pub/search/statements.sql'
+4-Oct-2013 9:49:04 AM hirondelle.web4j.readconfig.ConfigReader basicFetch
+FINEST: Number of keys in properties object : 2
+4-Oct-2013 9:49:04 AM hirondelle.web4j.readconfig.TextBlockReader read
+FINE: Reading text block file : '/WEB-INF/classes/hirondelle/predict/pub/resetpassword/statements.sql'
+4-Oct-2013 9:49:04 AM hirondelle.web4j.readconfig.ConfigReader basicFetch
+FINEST: Number of keys in properties object : 1
+4-Oct-2013 9:49:04 AM hirondelle.web4j.readconfig.TextBlockReader read
+FINE: Reading text block file : '/WEB-INF/classes/hirondelle/predict/main/preferences/preferences.sql'
+4-Oct-2013 9:49:04 AM hirondelle.web4j.readconfig.ConfigReader basicFetch
+FINEST: Number of keys in properties object : 2
+4-Oct-2013 9:49:04 AM hirondelle.web4j.readconfig.TextBlockReader read
+FINE: Reading text block file : '/WEB-INF/classes/hirondelle/predict/main/lists/statements.sql'
+4-Oct-2013 9:49:04 AM hirondelle.web4j.readconfig.ConfigReader basicFetch
+FINEST: Number of keys in properties object : 6
+4-Oct-2013 9:49:04 AM hirondelle.web4j.readconfig.TextBlockReader read
+FINE: Reading text block file : '/WEB-INF/classes/hirondelle/predict/main/prediction/statements.sql'
+4-Oct-2013 9:49:04 AM hirondelle.web4j.readconfig.ConfigReader basicFetch
+FINEST: Number of keys in properties object : 6
+4-Oct-2013 9:49:04 AM hirondelle.web4j.readconfig.TextBlockReader read
+FINE: Reading text block file : '/WEB-INF/classes/hirondelle/predict/main/deleteaccount/statements.sql'
+4-Oct-2013 9:49:04 AM hirondelle.web4j.readconfig.ConfigReader basicFetch
+FINEST: Number of keys in properties object : 4
+4-Oct-2013 9:49:04 AM hirondelle.web4j.readconfig.TextBlockReader read
+FINE: Reading text block file : '/WEB-INF/classes/hirondelle/predict/main/codes/code_table.sql'
+4-Oct-2013 9:49:04 AM hirondelle.web4j.readconfig.ConfigReader basicFetch
+FINEST: Number of keys in properties object : 1
+4-Oct-2013 9:49:04 AM hirondelle.web4j.readconfig.ConfigReader fetchMany
+CONFIG: Total number of distinct keys in configuration files : 28
+4-Oct-2013 9:49:04 AM hirondelle.web4j.readconfig.ConfigReader logKeysFromManyFiles
+CONFIG: (28) {
+  'ADD_NEW_USER'
+  'ADD_NEW_USER_ROLE'
+  'ADD_PREDICTION'
+  'CHANGE_PREDICTION'
+  'CHANGE_PREFERENCES'
+  'DELETE_LISTS'
+  'DELETE_PREDICTION'
+  'DELETE_PREDICTIONS'
+  'DELETE_ROLES'
+  'DELETE_USER'
+  'FETCH_FORM_SOURCE_ID'
+  'FETCH_OUTCOME_CODES'
+  'FETCH_OWNER'
+  'FETCH_PARTIAL_USER'
+  'FETCH_PREDICTION'
+  'FETCH_PREFERENCES'
+  'LIST_PREDICTIONS'
+  'PREDICTION_LIST_ADD'
+  'PREDICTION_LIST_CHANGE'
+  'PREDICTION_LIST_DELETE'
+  'PREDICTION_LIST_FETCH'
+  'PREDICTION_LIST_FETCH_PUBLIC'
+  'PREDICTION_LIST_LIST'
+  'RESET_LOST_PASSWORD'
+  'SAVE_FORM_SOURCE_ID'
+  'SEARCH_FOR_ALL_OF_THESE_WORDS'
+  'SEARCH_FOR_EXACT_PHRASE'
+  'SET_TEMP_PASSWORD_NONCE'
+}
+4-Oct-2013 9:49:04 AM hirondelle.web4j.readconfig.ConfigReader fetchPublicStaticFinalFields
+CONFIG: Fetching public static final fields of class hirondelle.web4j.database.SqlId, from all concrete classes.
+4-Oct-2013 9:49:04 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+CONFIG: Fetching all concrete classes.
+4-Oct-2013 9:49:04 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+FINEST: Ignoring package-info.class.
+4-Oct-2013 9:49:04 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+FINEST: Ignoring package-info.class.
+4-Oct-2013 9:49:04 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+FINEST: Ignoring package-info.class.
+4-Oct-2013 9:49:04 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+FINEST: Ignoring package-info.class.
+4-Oct-2013 9:49:04 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+FINEST: Ignoring package-info.class.
+4-Oct-2013 9:49:05 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+FINEST: Ignoring package-info.class.
+4-Oct-2013 9:49:05 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+FINEST: Ignoring package-info.class.
+4-Oct-2013 9:49:05 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+FINEST: Ignoring package-info.class.
+4-Oct-2013 9:49:05 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+FINEST: Ignoring package-info.class.
+4-Oct-2013 9:49:05 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+FINEST: Ignoring package-info.class.
+4-Oct-2013 9:49:05 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+FINEST: Ignoring package-info.class.
+4-Oct-2013 9:49:05 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+FINEST: Ignoring package-info.class.
+4-Oct-2013 9:49:06 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+FINEST: Ignoring package-info.class.
+4-Oct-2013 9:49:06 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+FINEST: Ignoring package-info.class.
+4-Oct-2013 9:49:06 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+FINEST: Ignoring package-info.class.
+4-Oct-2013 9:49:06 AM hirondelle.web4j.database.SqlStatement checkSqlFilesVersusSqlIdFields
+CONFIG: SqlId fields (28) {
+  'ADD_NEW_USER'
+  'ADD_NEW_USER_ROLE'
+  'ADD_PREDICTION'
+  'CHANGE_PREDICTION'
+  'CHANGE_PREFERENCES'
+  'DELETE_LISTS'
+  'DELETE_PREDICTION'
+  'DELETE_PREDICTIONS'
+  'DELETE_ROLES'
+  'DELETE_USER'
+  'FETCH_FORM_SOURCE_ID'
+  'FETCH_OUTCOME_CODES'
+  'FETCH_OWNER'
+  'FETCH_PARTIAL_USER'
+  'FETCH_PREDICTION'
+  'FETCH_PREFERENCES'
+  'LIST_PREDICTIONS'
+  'PREDICTION_LIST_ADD'
+  'PREDICTION_LIST_CHANGE'
+  'PREDICTION_LIST_DELETE'
+  'PREDICTION_LIST_FETCH'
+  'PREDICTION_LIST_FETCH_PUBLIC'
+  'PREDICTION_LIST_LIST'
+  'RESET_LOST_PASSWORD'
+  'SAVE_FORM_SOURCE_ID'
+  'SEARCH_FOR_ALL_OF_THESE_WORDS'
+  'SEARCH_FOR_EXACT_PHRASE'
+  'SET_TEMP_PASSWORD_NONCE'
+}
+4-Oct-2013 9:49:06 AM hirondelle.web4j.database.SqlStatement checkSqlFilesVersusSqlIdFields
+CONFIG: No mismatches found between .sql files and SqlId fields.
+4-Oct-2013 9:49:06 AM hirondelle.web4j.database.SqlStatement precompileAll
+CONFIG: Attempting precompile of all SQL statements by calling Connection.prepareStatement(String). Precompilation is not supported by all drivers/databases. If not supported, then this checking is not useful. See web.xml.
+4-Oct-2013 9:49:06 AM hirondelle.web4j.database.SqlStatement precompileAll
+CONFIG: Attempted SQL precompile, and found no failure for : (28) {
+  'ADD_NEW_USER'
+  'ADD_NEW_USER_ROLE'
+  'ADD_PREDICTION'
+  'CHANGE_PREDICTION'
+  'CHANGE_PREFERENCES'
+  'DELETE_LISTS'
+  'DELETE_PREDICTION'
+  'DELETE_PREDICTIONS'
+  'DELETE_ROLES'
+  'DELETE_USER'
+  'FETCH_FORM_SOURCE_ID'
+  'FETCH_OUTCOME_CODES'
+  'FETCH_OWNER'
+  'FETCH_PARTIAL_USER'
+  'FETCH_PREDICTION'
+  'FETCH_PREFERENCES'
+  'LIST_PREDICTIONS'
+  'PREDICTION_LIST_ADD'
+  'PREDICTION_LIST_CHANGE'
+  'PREDICTION_LIST_DELETE'
+  'PREDICTION_LIST_FETCH'
+  'PREDICTION_LIST_FETCH_PUBLIC'
+  'PREDICTION_LIST_LIST'
+  'RESET_LOST_PASSWORD'
+  'SAVE_FORM_SOURCE_ID'
+  'SEARCH_FOR_ALL_OF_THESE_WORDS'
+  'SEARCH_FOR_EXACT_PHRASE'
+  'SET_TEMP_PASSWORD_NONCE'
+}
+4-Oct-2013 9:49:06 AM hirondelle.web4j.database.DbConfig checkDbNamesInSettings
+FINE: Database names in web.xml settings are consistent with ConnectionSource.getDatabaseNames(): (1) {
+  ''
+}
+4-Oct-2013 9:49:06 AM hirondelle.web4j.Controller initDefaultImplementations
+CONFIG: Initializing web4j default implementations.
+4-Oct-2013 9:49:06 AM hirondelle.web4j.model.ConvertParamImpl init
+FINE: Supported Classes : (15) {
+  'boolean'
+  'class hirondelle.web4j.model.DateTime'
+  'class hirondelle.web4j.model.Decimal'
+  'class hirondelle.web4j.model.Id'
+  'class hirondelle.web4j.security.SafeText'
+  'class java.lang.Boolean'
+  'class java.lang.Integer'
+  'class java.lang.Long'
+  'class java.math.BigDecimal'
+  'class java.util.Date'
+  'class java.util.Locale'
+  'class java.util.TimeZone'
+  'class sun.util.calendar.ZoneInfo'
+  'int'
+  'long'
+}
+4-Oct-2013 9:49:06 AM hirondelle.web4j.webmaster.EmailerImpl init
+FINE: Configured Webmaster : support@web4j.com
+4-Oct-2013 9:49:06 AM hirondelle.web4j.webmaster.EmailerImpl init
+FINE: Configured MailServerConfig : NONE
+4-Oct-2013 9:49:06 AM hirondelle.web4j.readconfig.ConfigReader fetchPublicStaticFinalFields
+CONFIG: Fetching public static final fields of class hirondelle.web4j.request.RequestParameter, from concrete classes that implement interface hirondelle.web4j.action.Action
+4-Oct-2013 9:49:06 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+CONFIG: Fetching concrete classes that implement interface hirondelle.web4j.action.Action
+4-Oct-2013 9:49:06 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+FINEST: Ignoring package-info.class.
+4-Oct-2013 9:49:06 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+FINEST: Ignoring package-info.class.
+4-Oct-2013 9:49:06 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+FINEST: Ignoring package-info.class.
+4-Oct-2013 9:49:06 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+FINEST: Ignoring package-info.class.
+4-Oct-2013 9:49:06 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+FINEST: Ignoring package-info.class.
+4-Oct-2013 9:49:06 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+FINEST: Ignoring package-info.class.
+4-Oct-2013 9:49:06 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+FINEST: Ignoring package-info.class.
+4-Oct-2013 9:49:06 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+FINEST: Ignoring package-info.class.
+4-Oct-2013 9:49:06 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+FINEST: Ignoring package-info.class.
+4-Oct-2013 9:49:06 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+FINEST: Ignoring package-info.class.
+4-Oct-2013 9:49:06 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+FINEST: Ignoring package-info.class.
+4-Oct-2013 9:49:06 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+FINEST: Ignoring package-info.class.
+4-Oct-2013 9:49:06 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+FINEST: Ignoring package-info.class.
+4-Oct-2013 9:49:06 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+FINEST: Ignoring package-info.class.
+4-Oct-2013 9:49:06 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+FINEST: Ignoring package-info.class.
+4-Oct-2013 9:49:06 AM hirondelle.web4j.security.ApplicationFirewallImpl mapActionsToExpectedParams
+CONFIG: Expected Request Parameters per Web Action.(11) {
+  'class hirondelle.predict.main.deleteaccount.DeleteAccountAction' = (1) {
+    'Name:Operation Regex:(Show|Apply)'
+  }
+  'class hirondelle.predict.main.lists.PredictionListAction' = (3) {
+    'Name:Id Regex:(.){0,51200}'
+    'Name:Operation Regex:(List|Add|FetchForChange|Change|Delete)'
+    'Name:Title Regex:(.){0,51200}'
+  }
+  'class hirondelle.predict.main.logoff.LogoffAction' = (0) {
+  }
+  'class hirondelle.predict.main.prediction.PredictionAction' = (8) {
+    'Name:CreationDate Regex:(.){0,51200}'
+    'Name:Id Regex:(.){0,51200}'
+    'Name:Operation Regex:(List|Add|FetchForChange|Change|Delete)'
+    'Name:Outcome Regex:(.){0,51200}'
+    'Name:OutcomeDate Regex:(.){0,51200}'
+    'Name:ParentId Regex:(.){0,51200}'
+    'Name:Remark Regex:(.){0,51200}'
+    'Name:Text Regex:(.){0,51200}'
+  }
+  'class hirondelle.predict.main.preferences.PreferencesAction' = (3) {
+    'Name:Locale Regex:(.){0,51200}'
+    'Name:Operation Regex:(Show|Apply)'
+    'Name:ScreenName Regex:(.){0,51200}'
+  }
+  'class hirondelle.predict.pub.json.ViewPublicListJsonAction' = (1) {
+    'Name:ListId Regex:(.){0,51200}'
+  }
+  'class hirondelle.predict.pub.lostpassword.LostPasswordAction' = (4) {
+    'Name:Email Regex:(.){0,51200}'
+    'Name:Operation Regex:(Show|Apply)'
+    'Name:recaptcha_challenge_field Regex:(.){0,51200}'
+    'Name:recaptcha_response_field Regex:(.){0,51200}'
+  }
+  'class hirondelle.predict.pub.register.RegisterAction' = (8) {
+    'Name:Email Regex:(.){0,51200}'
+    'Name:LoginName Regex:(.){0,51200}'
+    'Name:Operation Regex:(Show|Apply)'
+    'Name:Password Regex:(.){0,51200}'
+    'Name:PasswordConfirm Regex:(.){0,51200}'
+    'Name:recaptcha_challenge_field Regex:(.){0,51200}'
+    'Name:recaptcha_response_field Regex:(.){0,51200}'
+    'Name:ScreenName Regex:(.){0,51200}'
+  }
+  'class hirondelle.predict.pub.resetpassword.ResetPasswordAction' = (7) {
+    'Name:Email Regex:(.){0,51200}'
+    'Name:Nonce Regex:(.){0,51200}'
+    'Name:Operation Regex:(Show|Apply)'
+    'Name:Password Regex:(.){0,51200}'
+    'Name:PasswordConfirm Regex:(.){0,51200}'
+    'Name:recaptcha_challenge_field Regex:(.){0,51200}'
+    'Name:recaptcha_response_field Regex:(.){0,51200}'
+  }
+  'class hirondelle.predict.pub.search.SearchAction' = (5) {
+    'Name:End Date Regex:(.){0,51200}'
+    'Name:Operation Regex:(Show|Search)'
+    'Name:Search Text Regex:(.){0,51200}'
+    'Name:SearchStyle Regex:(.){0,51200}'
+    'Name:Start Date Regex:(.){0,51200}'
+  }
+  'class hirondelle.predict.pub.viewlist.ViewPublicListAction' = (1) {
+    'Name:ListId Regex:(.){0,51200}'
+  }
+}
+4-Oct-2013 9:49:06 AM hirondelle.web4j.security.UntrustedProxyForUserIdImpl parseSettings
+FINE: Parsing ownership constraints defined in web.xml.
+4-Oct-2013 9:49:06 AM hirondelle.web4j.security.UntrustedProxyForUserIdImpl init
+FINE: (1) {
+  'PredictionAction' = (1) {
+    '*'
+  }
+}
+4-Oct-2013 9:49:06 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+CONFIG: Fetching concrete classes that implement interface hirondelle.web4j.action.Action
+4-Oct-2013 9:49:06 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+FINEST: Ignoring package-info.class.
+4-Oct-2013 9:49:06 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+FINEST: Ignoring package-info.class.
+4-Oct-2013 9:49:06 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+FINEST: Ignoring package-info.class.
+4-Oct-2013 9:49:06 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+FINEST: Ignoring package-info.class.
+4-Oct-2013 9:49:06 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+FINEST: Ignoring package-info.class.
+4-Oct-2013 9:49:06 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+FINEST: Ignoring package-info.class.
+4-Oct-2013 9:49:06 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+FINEST: Ignoring package-info.class.
+4-Oct-2013 9:49:06 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+FINEST: Ignoring package-info.class.
+4-Oct-2013 9:49:06 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+FINEST: Ignoring package-info.class.
+4-Oct-2013 9:49:06 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+FINEST: Ignoring package-info.class.
+4-Oct-2013 9:49:06 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+FINEST: Ignoring package-info.class.
+4-Oct-2013 9:49:06 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+FINEST: Ignoring package-info.class.
+4-Oct-2013 9:49:06 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+FINEST: Ignoring package-info.class.
+4-Oct-2013 9:49:06 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+FINEST: Ignoring package-info.class.
+4-Oct-2013 9:49:06 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+FINEST: Ignoring package-info.class.
+4-Oct-2013 9:49:06 AM hirondelle.web4j.request.RequestParserImpl getImplicitURI
+FINEST: Implicit mapping for 'class hirondelle.predict.pub.json.ViewPublicListJsonAction' is : '/pub/json/ViewPublicListJsonAction'
+4-Oct-2013 9:49:06 AM hirondelle.web4j.request.RequestParserImpl getImplicitURI
+FINEST: Implicit mapping for 'class hirondelle.predict.pub.register.RegisterAction' is : '/pub/register/RegisterAction'
+4-Oct-2013 9:49:06 AM hirondelle.web4j.request.RequestParserImpl getImplicitURI
+FINEST: Implicit mapping for 'class hirondelle.predict.pub.viewlist.ViewPublicListAction' is : '/pub/viewlist/ViewPublicListAction'
+4-Oct-2013 9:49:06 AM hirondelle.web4j.request.RequestParserImpl getImplicitURI
+FINEST: Implicit mapping for 'class hirondelle.predict.pub.lostpassword.LostPasswordAction' is : '/pub/lostpassword/LostPasswordAction'
+4-Oct-2013 9:49:06 AM hirondelle.web4j.request.RequestParserImpl getImplicitURI
+FINEST: Implicit mapping for 'class hirondelle.predict.pub.search.SearchAction' is : '/pub/search/SearchAction'
+4-Oct-2013 9:49:06 AM hirondelle.web4j.request.RequestParserImpl getImplicitURI
+FINEST: Implicit mapping for 'class hirondelle.predict.pub.resetpassword.ResetPasswordAction' is : '/pub/resetpassword/ResetPasswordAction'
+4-Oct-2013 9:49:06 AM hirondelle.web4j.request.RequestParserImpl getImplicitURI
+FINEST: Implicit mapping for 'class hirondelle.predict.main.logoff.LogoffAction' is : '/main/logoff/LogoffAction'
+4-Oct-2013 9:49:06 AM hirondelle.web4j.request.RequestParserImpl getImplicitURI
+FINEST: Implicit mapping for 'class hirondelle.predict.main.preferences.PreferencesAction' is : '/main/preferences/PreferencesAction'
+4-Oct-2013 9:49:06 AM hirondelle.web4j.request.RequestParserImpl getImplicitURI
+FINEST: Implicit mapping for 'class hirondelle.predict.main.lists.PredictionListAction' is : '/main/lists/PredictionListAction'
+4-Oct-2013 9:49:06 AM hirondelle.web4j.request.RequestParserImpl getImplicitURI
+FINEST: Implicit mapping for 'class hirondelle.predict.main.prediction.PredictionAction' is : '/main/prediction/PredictionAction'
+4-Oct-2013 9:49:06 AM hirondelle.web4j.request.RequestParserImpl getImplicitURI
+FINEST: Implicit mapping for 'class hirondelle.predict.main.deleteaccount.DeleteAccountAction' is : '/main/deleteaccount/DeleteAccountAction'
+4-Oct-2013 9:49:06 AM hirondelle.web4j.request.RequestParserImpl initWebActionMappings
+CONFIG: URI Mappings : (11) {
+  '/main/deleteaccount/DeleteAccountAction' = 'class hirondelle.predict.main.deleteaccount.DeleteAccountAction'
+  '/main/lists/PredictionListAction' = 'class hirondelle.predict.main.lists.PredictionListAction'
+  '/main/logoff/LogoffAction' = 'class hirondelle.predict.main.logoff.LogoffAction'
+  '/main/prediction/PredictionAction' = 'class hirondelle.predict.main.prediction.PredictionAction'
+  '/main/preferences/PreferencesAction' = 'class hirondelle.predict.main.preferences.PreferencesAction'
+  '/pub/json/ViewPublicListJsonAction' = 'class hirondelle.predict.pub.json.ViewPublicListJsonAction'
+  '/pub/lostpassword/LostPasswordAction' = '*****'
+  '/pub/register/RegisterAction' = 'class hirondelle.predict.pub.register.RegisterAction'
+  '/pub/resetpassword/ResetPasswordAction' = '*****'
+  '/pub/search/SearchAction' = 'class hirondelle.predict.pub.search.SearchAction'
+  '/pub/viewlist/ViewPublicListAction' = 'class hirondelle.predict.pub.viewlist.ViewPublicListAction'
+}
+4-Oct-2013 9:49:06 AM hirondelle.web4j.Controller startTasksWithNoDb
+CONFIG: Startup tasks not needing a database.
+4-Oct-2013 9:49:06 AM hirondelle.web4j.Controller tryDatabaseInitAndStartupTasks
+CONFIG: Startup tasks for database: DEFAULT
+4-Oct-2013 9:49:06 AM hirondelle.predict.main.codes.CodeTableUtil init
+FINE: Fetching code tables.
+4-Oct-2013 9:49:06 AM hirondelle.web4j.database.SqlStatement <init>
+FINEST: FETCH_OUTCOME_CODES {
+ fSqlText = SELECT Id, Text, Weight
+ FROM Outcome
+ ORDER BY DisplayOrder
+ Params = []
+}
+
+4-Oct-2013 9:49:06 AM hirondelle.web4j.database.ConvertColumnImpl convert
+FINEST: Successfully converted ResultSet column idx '1' into a hirondelle.web4j.model.Id
+4-Oct-2013 9:49:06 AM hirondelle.web4j.database.ConvertColumnImpl convert
+FINEST: Successfully converted ResultSet column idx '2' into a hirondelle.web4j.security.SafeText
+4-Oct-2013 9:49:06 AM hirondelle.web4j.database.ConvertColumnImpl convert
+FINEST: Successfully converted ResultSet column idx '3' into a hirondelle.web4j.security.SafeText
+4-Oct-2013 9:49:06 AM hirondelle.web4j.database.ConvertColumnImpl convert
+FINEST: Successfully converted ResultSet column idx '1' into a hirondelle.web4j.model.Id
+4-Oct-2013 9:49:06 AM hirondelle.web4j.database.ConvertColumnImpl convert
+FINEST: Successfully converted ResultSet column idx '2' into a hirondelle.web4j.security.SafeText
+4-Oct-2013 9:49:06 AM hirondelle.web4j.database.ConvertColumnImpl convert
+FINEST: Successfully converted ResultSet column idx '3' into a hirondelle.web4j.security.SafeText
+4-Oct-2013 9:49:06 AM hirondelle.web4j.database.ConvertColumnImpl convert
+FINEST: Successfully converted ResultSet column idx '1' into a hirondelle.web4j.model.Id
+4-Oct-2013 9:49:06 AM hirondelle.web4j.database.ConvertColumnImpl convert
+FINEST: Successfully converted ResultSet column idx '2' into a hirondelle.web4j.security.SafeText
+4-Oct-2013 9:49:06 AM hirondelle.web4j.database.ConvertColumnImpl convert
+FINEST: Successfully converted ResultSet column idx '3' into a hirondelle.web4j.security.SafeText
+4-Oct-2013 9:49:06 AM hirondelle.web4j.database.ConvertColumnImpl convert
+FINEST: Successfully converted ResultSet column idx '1' into a hirondelle.web4j.model.Id
+4-Oct-2013 9:49:06 AM hirondelle.web4j.database.ConvertColumnImpl convert
+FINEST: Successfully converted ResultSet column idx '2' into a hirondelle.web4j.security.SafeText
+4-Oct-2013 9:49:06 AM hirondelle.web4j.database.ConvertColumnImpl convert
+FINEST: Successfully converted ResultSet column idx '3' into a hirondelle.web4j.security.SafeText
+4-Oct-2013 9:49:06 AM hirondelle.web4j.database.ConvertColumnImpl convert
+FINEST: Successfully converted ResultSet column idx '1' into a hirondelle.web4j.model.Id
+4-Oct-2013 9:49:06 AM hirondelle.web4j.database.ConvertColumnImpl convert
+FINEST: Successfully converted ResultSet column idx '2' into a hirondelle.web4j.security.SafeText
+4-Oct-2013 9:49:06 AM hirondelle.web4j.database.ConvertColumnImpl convert
+FINEST: Successfully converted ResultSet column idx '3' into a hirondelle.web4j.security.SafeText
+4-Oct-2013 9:49:06 AM hirondelle.web4j.database.ConvertColumnImpl convert
+FINEST: Successfully converted ResultSet column idx '1' into a hirondelle.web4j.model.Id
+4-Oct-2013 9:49:06 AM hirondelle.web4j.database.ConvertColumnImpl convert
+FINEST: Successfully converted ResultSet column idx '2' into a hirondelle.web4j.security.SafeText
+4-Oct-2013 9:49:06 AM hirondelle.web4j.database.ConvertColumnImpl convert
+FINEST: Successfully converted ResultSet column idx '3' into a hirondelle.web4j.security.SafeText
+4-Oct-2013 9:49:06 AM hirondelle.predict.main.codes.CodeTableUtil fetchAndRememberCodeTable
+FINE: Code Table 'OUTCOMES': (6) {
+  '1' = 'Right'
+  '2' = 'Mostly Right'
+  '3' = 'Half Right'
+  '4' = 'Mostly Wrong'
+  '5' = 'Wrong'
+  '6' = 'Undecidable'
+}
+4-Oct-2013 9:49:06 AM hirondelle.web4j.Controller init
+FINE: Database init and startup tasks 5143.167 ms after start.
+4-Oct-2013 9:49:06 AM hirondelle.web4j.CheckModelObjects performChecks
+CONFIG: Performing checks on Model Objects for Cross-Site Scripting vulnerabilities and unsupported constructor arguments.
+4-Oct-2013 9:49:06 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+CONFIG: Fetching all concrete classes.
+4-Oct-2013 9:49:07 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+FINEST: Ignoring package-info.class.
+4-Oct-2013 9:49:07 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+FINEST: Ignoring package-info.class.
+4-Oct-2013 9:49:07 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+FINEST: Ignoring package-info.class.
+4-Oct-2013 9:49:07 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+FINEST: Ignoring package-info.class.
+4-Oct-2013 9:49:07 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+FINEST: Ignoring package-info.class.
+4-Oct-2013 9:49:07 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+FINEST: Ignoring package-info.class.
+4-Oct-2013 9:49:07 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+FINEST: Ignoring package-info.class.
+4-Oct-2013 9:49:07 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+FINEST: Ignoring package-info.class.
+4-Oct-2013 9:49:07 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+FINEST: Ignoring package-info.class.
+4-Oct-2013 9:49:07 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+FINEST: Ignoring package-info.class.
+4-Oct-2013 9:49:07 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+FINEST: Ignoring package-info.class.
+4-Oct-2013 9:49:07 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+FINEST: Ignoring package-info.class.
+4-Oct-2013 9:49:07 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+FINEST: Ignoring package-info.class.
+4-Oct-2013 9:49:07 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+FINEST: Ignoring package-info.class.
+4-Oct-2013 9:49:07 AM hirondelle.web4j.readconfig.ConfigReader fetchConcreteClassesThatImplement
+FINEST: Ignoring package-info.class.
+4-Oct-2013 9:49:07 AM hirondelle.web4j.CheckModelObjects logResults
+CONFIG: ** SUCCESS *** : Scanned Model Objects for Cross-Site Scripting vulnerabilities. Found 0 incidents.
+4-Oct-2013 9:49:07 AM hirondelle.web4j.CheckModelObjects logResults
+CONFIG: ** SUCCESS *** : Scanned Model Objects for unsupported constructor arguments. Found 0 incidents.
+4-Oct-2013 9:49:07 AM hirondelle.web4j.Controller init
+FINE: Cross-Site Scripting scan completed 5320.534 ms after start.
+4-Oct-2013 9:49:07 AM hirondelle.web4j.Controller init
+CONFIG: *** SUCCESS : STARTUP COMPLETED SUCCESSFULLY for Predictions 4.9.0.0. Total startup time : 5320.534 ms

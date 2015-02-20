@@ -1,0 +1,10 @@
+{"predictionlist": {
+  "owner":  "John O'Hanley",
+  "title": "BetaZpod",
+  "score": "75",
+  "prediction": [
+    {"number": "1", "text": "Number one", "remark": "", "outcome": ""},
+    {"number": "2", "text": "number two...", "remark": "", "outcome": "Mostly Right"},
+    {"number": "3", "text": "Greaet", "remark": "", "outcome": ""}
+  ]
+}}

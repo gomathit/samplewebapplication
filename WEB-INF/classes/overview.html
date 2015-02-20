@@ -1,0 +1,142 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="Hirondelle Systems">
+   <meta name="GENERATOR" content="Mozilla/4.76 [en] (WinNT; U) [Netscape]">
+   <title>Predictions</title>
+</head>
+<body>
+<h2>Predictions - a WEB4J Example Application</h2>
+
+<P>This is an example application, authored by John O'Hanley. 
+It demonstrates using WEB4J to build a typical Java web application : a person using a browser to interact with 
+a relational database. 
+
+<P>The application has a style typical for a public web application: users can 
+register themselves, and maintain their own accounts. As well, security rules are 
+enforced which prevent one user from changing the data attached to another user. 
+(For internal intranet applications, security is usually centered on <i>roles</i>, not individual users.)
+
+<P>The problem domain is about making simple <em>predictions</em>, and tracking their outcome.
+Anyone can browse the predictions. To enter predictions, users must first create an account.
+
+<P><span class='highlight'>
+To run this application, please see the <a href='http://www.web4j.com/GettingStartedGuide.jsp'>Getting Started Guide</a>.
+Although that guide was created for another example application (the <i>Fish and Chips Club</i>), it is largely applicable to 
+this application as well. The main difference is that this application has just a single database, not many.
+
+<a name="Features"></a>
+<h3>Features</h3>
+Features specific to the <em>Predictions</em> application include :
+<ul>
+<li>searching predictions by text and date
+<li>account creation and deletion
+<li>allowing users to recover lost passwords, using an email with a link to a temporary form
+<li>entering predictions, and organizing them into simple lists
+<li>serving data in the JSON data exchange format
+<li>use of the <a href='http://recaptcha.net/'>recaptcha</a> service to prevent spam
+(the recaptcha4j library written by Soren Davidsen is used by this application)
+<li>data ownership constraints prevent one user from editing the data belonging to other users
+</ul>
+
+<a name="Miscellaneous"></a>
+<h3>Miscellaneous</h3>
+<P>Note that <a href='http://www.javapractices.com/Topic205.cjp'>package-by-feature</a> is used. 
+This is the recommended style, though it is not required. 
+(If you have never used package-by-feature, you are encouraged 
+to try it: those who do try it rarely return to the package-by-layer style.)
+
+<P>The <tt>hirondelle.web4j.config</tt> package is special, and is reserved by WEB4J
+for the exclusive use of the application programmer. See 
+{@link hirondelle.web4j.BuildImpl} in the WEB4J javadoc for more information.
+
+<P>The RECAPTCHA mechanism requires each deployment to acquire an account with recaptcha.net, along 
+with a public key and a private key. Those keys are used in:
+<ul>
+ <li>web.xml - the CaptchaPrivateKey setting (passed to the Captcha.java class upon startup).
+ <li>catcha.tag - a simple JSP taglet that encapsulates the markup needed to show the captcha elements in the user interface.
+</ul>
+If you don't make those settings, then the application will not operate.
+
+<hr>
+
+<a name="VersionHistory"></a>
+<h3>Version History</h3>
+
+<h4>Version Number Convention</h4>
+The first three parts of the version number of this application is synchronized with the version number 
+of the corresponding web4j.jar version number with which it was built. 
+
+<h4>4.10.0.0 - published October 19, 2013</h4>
+Updated the version of web4j.jar. This is the first version to use JDK 1.6. 
+
+
+<h4>4.9.0.0 - published October 5, 2013</h4>
+Updated the version of web4j.jar.
+
+<h4>4.8.3.0 - published June 9, 2012</h4>
+Updated the version of web4j.jar.
+
+
+<h4>4.7.1.0 - published September 24, 2011</h4>
+Updated the version of web4j.jar, which had a simple bug fix.
+
+
+<h4>4.7.0.0 - published September 17, 2011</h4>
+Updated the version of web4j.jar. 
+Two config items that force creation of threads have been removed from web.xml:
+<ul>
+ <li>BadResponseDetector
+ <li>EmailInSeparateThread
+</ul>
+The <tt>displayMessages.tag</tt> has been altered, to simply remove session-scope messages after they have been 
+displayed.
+
+
+<h4>4.6.2.0 - published July 9, 2011</h4>
+The only change is to web4j.jar, which had a bug-fix release.
+
+<h4>4.6.1.0 - published May 15, 2011</h4>
+The only change is to web4j.jar, which had a bug-fix release.
+
+<h4>4.6.0.0 - published March 1, 2011</h4>
+Includes an implemention for the new LoginTasks interface. 
+The old Servlet Filter, which used to react to user login, has been removed.
+
+<P>New settings in web.xml, for the improved implementation of EmailerImpl.
+
+
+<h4>4.5.1.0 - published January 29, 2011</h4>
+Bug fix release, for correcting errors related to encoding. 
+<ul>
+<li>web4j.jar has corresponding bug fix release 4.5.1, in which the <tt>CsrfFilter</tt> has been 
+fixed with respect to encoding. (The problem was its response wrapper, which reverted the encoding to the container's default.)
+<li>resaved all JSP's and tag files under the UTF-8 encoding.
+<li>the script for creating the database now explicitly states the encoding as UTF-8.
+<li>in web.xml, added a jsp-config entry, to include a prelude with for each JSP (which states the encoding).
+<li>tag files include a tag directive, stating the encoding.
+<li>the JSP which serves json data has changed its extension to '.json'.
+<li><tt>DeleteAccountAction</tt> was using String, should have been SafeText.
+</ul>
+
+<h4>4.5.0.0 - published April 17, 2010</h4>
+Use of String has been replaced with Id or SafeText where possible. 
+
+<P>Tags related to translation have been removed from JSPs. 
+This app is in a single language, with no translation.
+
+<h4>4.4.0.0 - published January 30, 2010</h4>
+One bug fix:
+<ul>
+ <li>FIX: NullPointerException during some Change operations. PredictionDAO.hasChangedOutcome() had an incorrect branch.
+</ul>
+
+<P>As well, this version uses the new DateTime building block class. 
+
+
+<h4>4.3.0.0 - published September 7, 2009</h4>
+This is the first version. It was built with web4j version 4.3.0.
+
+</body>
+</html>

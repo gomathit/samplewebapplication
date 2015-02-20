@@ -1,0 +1,13 @@
+﻿<%@ page contentType="application/json" %>
+<%@ page pageEncoding="UTF-8"%> 
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>  
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %> 
+{"predictionlist": {
+  "owner":  "${list.userScreenName.jsonSafe}",
+  "title": "${list.title.jsonSafe}",
+  "score": "${averageScore}",
+  "prediction": [
+  <c:forEach var="item" items="${itemsForListing}" varStatus="index">  {"number": "${index.count}", "text": "${item.text.jsonSafe}", "remark": "${item.remark.jsonSafe}", "outcome": "${item.outcome}"}<c:if test="${index.count != fn:length(itemsForListing)}">,</c:if>
+  </c:forEach>]
+}}
+
